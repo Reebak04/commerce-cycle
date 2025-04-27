@@ -1,0 +1,238 @@
+/* Apply background image and full-page styling */
+body {
+	background: linear-gradient(-45deg, #C1A3FF, #E0C3FC, #F9F3CC, #FDC5F5);
+
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+/* Centered Table Container */
+.table-container {
+    width: 100%;
+    background: rgba(209, 47, 47, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table Headers */
+th {
+    background: #A084CA;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Table Rows */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternate Row Colors */
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* Button Styles */
+button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.edit-btn {
+    color: rgb(6, 192, 55);
+}
+
+/* Delete Button */
+.delete-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.add-btn{
+    margin-top: 20px;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input:focus {
+        outline: none;
+  }
+  
+  button {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  /* Header - College Logo */
+.header {
+  text-align: center;
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+.logo {
+  width: 100%;
+  max-height: 100px; /* Adjust height as needed */
+  object-fit: contain;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.search-bar {
+  padding: 5px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Content */
+.content {
+  margin: 20px auto;
+  width: 80%;
+}
+.college-logo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.job-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.job-card {
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+  margin: 0 0 10px;
+}
+
+.job-card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.edit-btn, .delete-btn {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.edit-btn {
+  color: rgb(57, 208, 30);
+  border-radius: 5px;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border-radius: 5px;
+}
+.page-content {
+  margin-top: 100px; /* Enough space below the fixed navbar */
+}
+.page-content {
+  margin-top: 100px;
+}
+
+@media (max-width: 600px) {
+  .page-content {
+    margin-top: 120px; /* Add more space if navbar stacks */
+  }
+}
