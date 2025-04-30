@@ -39,8 +39,8 @@ To run this project, you need to have the following installed:
 #### 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/marketplace-app.git
-   cd marketplace-app
+   git clone https://github.com/Reebak04/commerce-cycle.git
+   cd commerce-cycle
    ```
 #### 2. Install the frontend dependencies:
 ```bash
@@ -60,7 +60,7 @@ cd backend
 ```
 #### 2.Set up your MySQL database:
 ```bash
-spring.datasource.url=jdbc:mysql://localhost:3306/marketplace
+spring.datasource.url=jdbc:mysql://localhost:3306/commercecycle
 spring.datasource.username=root
 spring.datasource.password=yourpassword
 ```
